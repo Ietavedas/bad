@@ -1,0 +1,26 @@
+@media screen and (max-width: 480px){
+
+.hamburger-label{
+	// display: none;
+}
+
+}
+
+@media screen and (max-width: 1622px){
+
+.header{
+	&__services{
+		.logo-fix{
+			// display: none;
+			order: 1;
+
+		}
+	}
+}
+	
+
+.hamburger{
+	order: 0;
+}
+
+}
