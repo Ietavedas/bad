@@ -25,8 +25,8 @@ gulp.task('scripts', function(){
 	return gulp.src([
 			'app/libs/jquery/dist/jquery.min.js',
 			'app/libs/jquery.easing/jquery.easing.js',
-			'app/libs/slick/slick.min.js',
-			'app/libs/air-datepicker/src/js/datepicker.js'
+			'app/libs/slick/slick.min.js'
+			// 'app/libs/air-datepicker/src/js/datepicker.js'
 		])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
