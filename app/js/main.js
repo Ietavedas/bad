@@ -7,7 +7,7 @@ $('.slider').slick({
 	nextArrow: '<div class="arr-next"></div>',
 	responsive: [
 		{
-			breakpoint: 1920,
+			breakpoint: 2000,
 			settings: {
 				appendDots: $('.slide-control'),
 				appendArrows: $('.slide-control')
@@ -371,6 +371,7 @@ $(window).scroll(function(){
 $('.hamburger').on('click', function() {
   $(this).find('.burger-menu').toggleClass("burger-menu--opened");
   $(this).find('.burger-menu').toggleClass("burger-menu--closed");
+  
 });
 
 $('.top-content__slider').slick({
