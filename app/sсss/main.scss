@@ -47,7 +47,8 @@ body{
 }
 
 .main{
-	// margin-top: 95px;
+	margin-top: 95px;
+	position: relative;
 }
 
 .button-wrap{
@@ -682,6 +683,7 @@ body{
 		margin-top: 60px;
 		padding-left: 30px;
 		border-left: 1px solid #e8e8e8;
+		display: none;
 	}
 }
 
@@ -691,15 +693,24 @@ body{
 	margin-bottom: 30px;
 	text-decoration: none;
 	color: #000;
+	vertical-align: top;
+
+	&__img-wrap{
+		width: 250px;
+		height: 170px;
+		overflow: hidden;
+	}
 
 	&__img{
-		// transform: scale(0);
+		transform: scale(1);
+		transition: all .5s ease;
 	}
-	// &:hover{
-	// 	&__img{
-	// 		transform: scale(1);
-	// 	}
-	// }
+	&:hover{
+		.item__img{
+			transform: scale(1.2);
+			transition: all .5s ease;
+		}
+	}
 
 	&__block{
 		display: flex;
@@ -2197,4 +2208,36 @@ body{
 		margin-left: 0;
 		margin-right: 0;
 	}
+}
+
+.rest-overlay{
+	background: url(../images/rest-layout.png);
+	width: 561px;
+	height: 1547px;
+	position: absolute;
+	left: 0;
+	top: 700px;
+	z-index: -1;
+
+	&--mid{
+		left: auto;
+		right: 0;
+		top: 2000px;
+		transform: rotate(180deg);
+	}
+
+	&--bottom{
+		top: 3000px;
+	}
+}
+
+@media screen and (max-width: 1800px){
+	.rest-overlay{
+		left: -10%;
+		&--mid{
+			left: auto;
+			right: -15%;
+		}
+	}
+
 }

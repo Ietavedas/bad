@@ -30,6 +30,10 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative; }
 
+.main {
+  margin-top: 95px;
+  position: relative; }
+
 .button-wrap {
   text-align: center; }
 
@@ -449,14 +453,28 @@ body {
   .menu-hover__inner {
     margin-top: 60px;
     padding-left: 30px;
-    border-left: 1px solid #e8e8e8; }
+    border-left: 1px solid #e8e8e8;
+    display: none; }
 
 .item {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 30px;
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  vertical-align: top; }
+  .item__img-wrap {
+    width: 250px;
+    height: 170px;
+    overflow: hidden; }
+  .item__img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .5s ease; }
+  .item:hover .item__img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all .5s ease; }
   .item__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1639,3 +1657,27 @@ body {
   .restaurant-wrap .button {
     margin-left: 0;
     margin-right: 0; }
+
+.rest-overlay {
+  background: url(../images/rest-layout.png);
+  width: 561px;
+  height: 1547px;
+  position: absolute;
+  left: 0;
+  top: 700px;
+  z-index: -1; }
+  .rest-overlay--mid {
+    left: auto;
+    right: 0;
+    top: 2000px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .rest-overlay--bottom {
+    top: 3000px; }
+
+@media screen and (max-width: 1800px) {
+  .rest-overlay {
+    left: -10%; }
+    .rest-overlay--mid {
+      left: auto;
+      right: -15%; } }

@@ -15,7 +15,7 @@
 <div class="wrapper">
 	<div class="overlay"></div>
 
-	<!-- <div class="header-wrap">
+	<div class="header-wrap">
 		<header class="header">
 				<div class="navigation">
 					<div class="navigation__arrow"></div>
@@ -40,10 +40,9 @@
 						</div>
 
 						<ul class="navigation__items navigation__items--line-wrap js-navigation__items">
-							<li class="navigation__item navigation__item--line"><a class="navigation__link" href="">Рестораны</a>
-								
+							<li class="navigation__item navigation__item--line" data-block="rest"><a class="navigation__link" href="">Рестораны</a>		
 							</li>
-							<li class="navigation__item navigation__item--line"><a class="navigation__link" href="">Номера</a>
+							<li class="navigation__item navigation__item--line" data-block="num"><a class="navigation__link" href="">Номера</a>
 								<!-- <div class="menu-hover">
 									<div class="menu-hover__inner">
 										<a href="" class="item">
@@ -97,10 +96,10 @@
 										</a>
 									</div>
 								</div> -->
-							<!-- </li>
-							<li class="navigation__item navigation__item--line"><a class="navigation__link" href="">Свадьбы и банкеты</a></li>
-							<li class="navigation__item navigation__item--line"><a class="navigation__link" href="">Отдых</a></li>
-							<li class="navigation__item navigation__item--line"><a class="navigation__link" href="">Автобусный тур</a></li>
+							 </li>
+							<li class="navigation__item navigation__item--line" data-block="sw"><a class="navigation__link" href="">Свадьбы и банкеты</a></li>
+							<li class="navigation__item navigation__item--line" data-block="recr"><a class="navigation__link" href="">Отдых</a></li>
+							<li class="navigation__item navigation__item--line" data-block="tour"><a class="navigation__link" href="">Автобусный тур</a></li>
 						</ul>
 
 						<a href="" class="btn-nav btn-nav--ticket">Купить билет</a>
@@ -112,9 +111,11 @@
 					</div>
 
 					<div class="menu-hover">
-						<div class="menu-hover__inner">
+						<div class="menu-hover__inner" data-block="rest">
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">De Luxe</span>
@@ -124,7 +125,9 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -134,7 +137,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -144,7 +150,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Полулюкс</span>
@@ -154,7 +163,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Стандарт +</span>
@@ -163,7 +175,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Стандарт</span>
@@ -173,7 +188,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Эконом</span>
@@ -183,7 +201,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Коттедж в аренду с сауной (10 человек)</span>
@@ -193,9 +214,11 @@
 								</div>
 							</a>
 						</div>
-						<div class="menu-hover__inner">
+						<div class="menu-hover__inner" data-block="num">
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">De Luxe</span>
@@ -205,7 +228,9 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -215,7 +240,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -225,7 +253,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Полулюкс</span>
@@ -235,7 +266,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Стандарт +</span>
@@ -244,7 +278,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Стандарт</span>
@@ -254,7 +291,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Эконом</span>
@@ -263,20 +303,12 @@
 									<span class="item__price">от 2 500 руб.</span>
 								</div>
 							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Коттедж в аренду с сауной (10 человек)</span>
-									</div>
-									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
 						</div>
-						<div class="menu-hover__inner">
+						<div class="menu-hover__inner" data-block="sw">
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">De Luxe</span>
@@ -286,7 +318,9 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -296,7 +330,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -306,7 +343,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Полулюкс</span>
@@ -316,7 +356,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Стандарт +</span>
@@ -325,9 +368,11 @@
 								</div>
 							</a>
 						</div>
-						<div class="menu-hover__inner">
+						<div class="menu-hover__inner" data-block="recr">
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">De Luxe</span>
@@ -337,7 +382,9 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -347,7 +394,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -357,7 +407,10 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Полулюкс</span>
@@ -366,49 +419,12 @@
 									<span class="item__price">от 2 500 руб.</span>
 								</div>
 							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Стандарт +</span>
-									</div>
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Стандарт</span>
-									</div>
-									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Эконом</span>
-									</div>
-									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Коттедж в аренду с сауной (10 человек)</span>
-									</div>
-									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
 						</div>
-						<div class="menu-hover__inner">
+						<div class="menu-hover__inner" data-block="tour">
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">De Luxe</span>
@@ -418,7 +434,9 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
@@ -428,31 +446,15 @@
 								</div>
 							</a>
 							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
+								<div class="item__img-wrap">
+									<img src="images/item1.jpg" alt="" class="item__img">
+								</div>
+								
 								<div class="item__block">
 									<div class="item__name-wrap">
 										<span class="item__name">Люкс двухкомнатный</span>
 									</div>
 									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Полулюкс</span>
-									</div>
-									
-									<span class="item__price">от 2 500 руб.</span>
-								</div>
-							</a>
-							<a href="" class="item">
-								<img src="images/item1.jpg" alt="" class="item__img">
-								<div class="item__block">
-									<div class="item__name-wrap">
-										<span class="item__name">Стандарт +</span>
-									</div>
 									<span class="item__price">от 2 500 руб.</span>
 								</div>
 							</a>
@@ -460,9 +462,9 @@
 					</div>
 				</div>
 			<div class="header__services">
-				<!-- <span>Все услуги</span> -->
+				<!-- <span>Все услуги</span>  -->
 
-				<!-- <img src="images/logo-fix.png" alt="" class="logo-fix">
+				<img src="images/logo-fix.png" alt="" class="logo-fix">
 
 				<div class="hamburger">
 				  
@@ -519,7 +521,7 @@
 				</a>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	
 	<div class="main">
 		
