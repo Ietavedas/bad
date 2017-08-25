@@ -209,7 +209,7 @@ $('.js-navigation__items').mouseenter(function(){
 		left: '-100%'
 	}, 900, 'easeInOutQuint');
 
-	$(this).find('.navigation__item').mouseenter(function () {
+	/*$(this).find('.navigation__item').mouseenter(function () {
 		var block = $(this).data("block");
 
 		$('.menu-hover__inner[data-block="' + block + '"]')
@@ -217,7 +217,7 @@ $('.js-navigation__items').mouseenter(function(){
 		.show()
 		.siblings()
 		.hide();
-	})
+	})*/
 
 	if ($(window).width() > 768) {
 		// $('.menu-hover').show('fast');
@@ -230,7 +230,8 @@ $('.js-navigation__items').mouseenter(function(){
 
 			$('.menu-hover__inner[data-block="' + block + '"]')
 			.stop(true, true)
-			.show()
+			// .show()
+			.fadeIn(500)
 			.siblings()
 			.hide();
 		})
